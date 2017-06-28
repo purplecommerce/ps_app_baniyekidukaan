@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-  <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.baniyekidukaan.ps" version="1.2.1">
+  <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.baniyekidukaan.ps" version="1.2.2">
   <name>BaniyeKiDukaan APP</name>
   <description>Download the App to experience all new way of shopping that BaniyeKiDukaan offers via the App. It has host of features that allows merchants to offer personalized and specific offers to the users. Some of the features include - login using facebook /Google session on the device. Push notifications to individual/grouped users allowing for targeted and personalized campaigns.</description>
   <author email="development@purplecommerce.com" href="http://purplestores.in">Purple Commerce</author>
@@ -20,7 +20,7 @@
     <plugin name="cordova-plugin-media" source="npm" spec="3.0.0" />
     <plugin name="cordova-plugin-network-information" source="npm" spec="1.3.2" />
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="4.0.2" />      
-    <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.7.4">
+    <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.9.1">
        <param name="APP_ID" value="230602080786198" />
             <param name="APP_NAME" value="BaniyeKiDukaan" />
     </gap:plugin>

@@ -114,7 +114,7 @@
         <script type="text/javascript" src="cordova.js"></script>  
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            var app_version='1.2.1';
+            var app_version='1.2.2';
             
             var is_notyfy=false;
 			document.addEventListener("deviceready", onDeviceReady, false);
@@ -288,10 +288,12 @@
                     function (response) {  });
             }
 			var fbLoginSuccess = function(userData) {
+                            
+                            alert('inside fbLoginSuccess fn'+JSON.stringify(userData));
 				$('.progress-bar-validation').show();
 				$.ajax({
 					type : 'GET',
-					url : 'http://stores.purplestores.in/getFacebook_email.php',
+					url : 'http://stores.purplestores.in/getFacebook_email1.php',
 					dataType : 'jsonp',
 					async : false,
 					jsonpCallback : 'jsoncallbackFblogin',
@@ -302,6 +304,7 @@
 
 			}
 			function jsoncallbackFblogin(data) {
+                            alert('inside jsoncallbackFblogin fn'+JSON.stringify(data));
 				$('.progress-bar-validation').show();
 				var result = data;
 				var accessToken = result.accessToken;
@@ -347,7 +350,8 @@
 				
 				$('.progress-bar-validation').show();
 				facebookConnectPlugin.login(["public_profile", "email", "user_birthday"], fbLoginSuccess, function(error) {
-					alert("" + error)
+                                alert('inside facebookConnectPlugin error fn'+JSON.stringify(error));				
+                           //  alert("" + error);
 				});
 			}
 
