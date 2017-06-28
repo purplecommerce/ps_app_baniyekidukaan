@@ -24,7 +24,7 @@
        <param name="APP_ID" value="230602080786198" />
             <param name="APP_NAME" value="BaniyeKiDukaan" />
     </gap:plugin>-->
-   <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.12.0">
+   <gap:plugin name="phonegap-facebook-plugin" version="0.12.0">
         <param name="APP_ID" value="230602080786198" />
         <param name="APP_NAME" value="BaniyeKiDukaan" />
     </gap:plugin>
